@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/trasua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android_trasua"
+            />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hôm nay bạn uống gì?"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/trasua"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="268 Tô Hiến Thành, Cư X..."
+            android:textStyle="bold"
+            android:layout_below="@+id/tv1"
+            android:layout_toRightOf="@+id/trasua"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem thử"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/chitietdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết Đơn hàng"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/daytopLS"
+            android:layout_width="266dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/chitietdh"
+            android:text="Đẩy top mục Loship - Thử quán mới 1 tuần"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chitietdh"
+            android:text="500.000đ"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/daytopLS"
+            />
+        <TextView
+            android:id="@+id/goitc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gói tăng cường: Tăng độ phủ sóng cho cửa hàng bằng cách mua kèm gói đẩy top trên các thể loại (tùy chọn)."
+            android:textSize="20dp"
+            android:layout_below="@+id/daytopLS"
+            />
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goitc"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/banhtrangtron"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Bánh tráng trộn - Đẩy top"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/checkbox1"
+            android:layout_below="@+id/goitc"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/menhgia1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goitc"
+            android:text="100.000đ"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/banhtrangtron"
+
+            />
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox1"
+            android:layout_marginTop="35dp"/>
+        <TextView
+            android:id="@+id/banhtrangnuong"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Bánh tráng nướng - Đẩy top"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/checkbox2"
+            android:layout_below="@+id/banhtrangtron"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/menhgia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menhgia1"
+            android:text="100.000đ"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/banhtrangnuong"
+
+            />
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox2"
+            android:layout_marginTop="35dp"/>
+        <TextView
+            android:id="@+id/trasuatranchau"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Trà Sữa Trân Châu - Đẩy top"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/checkbox3"
+            android:layout_below="@+id/banhtrangnuong"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menhgia2"
+            android:text="100.000đ"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/trasuatranchau"
+
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/thoihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời hạn :"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/10/2020 - 07/10/2020"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/thoihan"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/thanhtoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cách thanh toán"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <ImageView
+            android:id="@+id/dong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/android_dong"
+            android:layout_below="@+id/thanhtoan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tài xế đến tận nơi thu tiền"
+            android:textSize="20dp"
+            android:layout_below="@id/thanhtoan"
+            android:layout_toRightOf="@id/dong"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/thanhtoan"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/android_fix" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng:"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="700.000đ"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tong"
+            android:layout_marginLeft="220dp"
+
+
+            />
+        <Button
+            android:background="#E0132B"
+            android:paddingRight="50dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:layout_below="@id/tong"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
