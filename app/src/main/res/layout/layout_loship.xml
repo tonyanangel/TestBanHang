@@ -1,86 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
-    >
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:padding="30dp"
-
-
         android:orientation="vertical"
-       >
+        android:padding="15dp">
 
-        <EditText
-            android:id="@+id/edt1"
+        <ImageView
+            android:id="@+id/imvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imvLogo"
+            android:layout_marginTop="12dp"
             android:text="Chào Mừng Bạn Đến Với LOSHIP"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/edt2"
+        <TextView
+            android:id="@+id/tvWelcome1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edt1"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_marginTop="12dp"
             android:text="Nhập số điện thoại của bạn để tiếp tục"
+            android:textColor="@color/black"
 
             />
 
-        <EditText
-            android:id="@+id/edt3"
+        <LinearLayout
+            android:id="@+id/lnlCountryCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edt2"
-            android:text="+84" />
+            android:layout_below="@id/tvWelcome1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_bg_gray_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_vietnam" />
+
+            <TextView
+                android:id="@+id/tvCountryCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="+84"
+                android:textColor="#0897EE"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <EditText
-            android:id="@+id/edt4"
+            android:id="@+id/edtPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edt2"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/edt3"
+            android:layout_alignTop="@id/lnlCountryCode"
+            android:layout_alignBottom="@id/lnlCountryCode"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/lnlCountryCode"
+            android:background="@drawable/bg_button_phone"
+            android:enabled="true"
+            android:padding="10dp"
             android:text="016" />
 
-        <Button
+        <TextView
             android:id="@+id/btntt"
             android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/lnlCountryCode"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_bg_red_10"
+            android:gravity="center"
+            android:text="Tiếp Tục"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edt4"
-            android:text="Tiếp Tục" />
+            android:layout_above="@id/vDangNhapFacebook"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tvHoac"
+                android:src="@drawable/ic_line" />
+
+            <TextView
+                android:id="@+id/tvHoac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Hoặc" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvHoac"
+                android:src="@drawable/ic_line" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vDangNhapFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvDieuKhoan">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvFb"
+                android:layout_alignBottom="@id/tvFb"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@id/tvFb"
+
+                android:src="@drawable/ic_vietnam" />
+
+            <TextView
+                android:id="@+id/tvFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Đăng Nhập FaceBook"
+                android:textColor="#1877F2"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/txt1"
+            android:id="@+id/tvDieuKhoan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btntt"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="300dp"
-            android:text="Hoặc" />
-
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txt1"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="Đăng Nhập FaceBook" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:text="Điều Khoản &amp; Điều Kiện Sử Dụng"/>
+            android:layout_marginBottom="10dp"
+            android:text="Điều Khoản &amp; Điều Kiện Sử Dụng"
+            android:textColor="#0897EE"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
