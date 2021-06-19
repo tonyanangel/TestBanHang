@@ -55,21 +55,25 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:background="@drawable/ic_bg_gray_e8_border_10">
 
-        <TextView
-            android:id="@+id/tknh"
+        <ImageView
+            android:id="@+id/imvBank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tài khoản ngân hàng"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:src="@drawable/ic_placeholder"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
 
         <TextView
             android:id="@+id/TenKH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tknh"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/imvBank"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
             android:text="Nguyễn Thị Diệu Hiền"
             android:textSize="20sp" />
 
@@ -122,43 +126,45 @@
 
             android:layout_toLeftOf="@+id/thaydoi"
             android:src="@drawable/ic_launcher_background" />
+
         <ImageView
             android:id="@+id/map"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/android_map"
             android:layout_below="@+id/thongtinCH"
             android:layout_marginTop="50dp"
+            android:src="@drawable/android_map"
 
             >
 
         </ImageView>
+
         <TextView
             android:id="@+id/diachi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="302 Tô Hiến Thành,P13,Q10"
             android:layout_below="@+id/thongtinCH"
-            android:layout_toRightOf="@+id/phone"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="10dp"
-            ></TextView>
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/phone"
+            android:text="302 Tô Hiến Thành,P13,Q10"></TextView>
+
         <ImageView
             android:id="@+id/phone"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/android_phone"
             android:layout_below="@+id/map"
             android:layout_marginTop="10dp"
-            ></ImageView>
+            android:src="@drawable/android_phone"></ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0909.999.9999"
-            android:layout_toRightOf="@+id/phone"
             android:layout_below="@+id/map"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/phone"
+            android:text="0909.999.9999">
 
         </TextView>
 
@@ -166,17 +172,18 @@
             android:id="@+id/mail"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/android_mail"
             android:layout_below="@+id/phone"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:src="@drawable/android_mail" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email: chucuahang@lozi.vn"
-            android:layout_toRightOf="@+id/mail"
             android:layout_below="@+id/phone"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/mail"
+            android:text="Email: chucuahang@lozi.vn">
 
         </TextView>
 
@@ -184,40 +191,43 @@
             android:id="@+id/Time"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/android_time"
             android:layout_below="@+id/mail"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:src="@drawable/android_time" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giờ mở cửa: Thứ hai (9:00 - 17:00), Th..."
-            android:layout_toRightOf="@+id/mail"
             android:layout_below="@+id/mail"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/mail"
+            android:text="Giờ mở cửa: Thứ hai (9:00 - 17:00), Th..." />
+
         <ImageView
             android:id="@+id/Cart"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/android_cart"
             android:layout_below="@+id/Time"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:src="@drawable/android_cart" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ngành kinh doanh : Trà sữa, Nước ép"
-            android:layout_toRightOf="@+id/Time"
             android:layout_below="@+id/Time"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/Time"
+            android:text="Ngành kinh doanh : Trà sữa, Nước ép" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
 
         <ImageView
             android:id="@+id/setting"
@@ -225,86 +235,96 @@
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/android_setting" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cài đặt hóa đơn"
-            android:textStyle="bold"
-            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/setting"
-            android:layout_marginLeft="20dp"/>
+            android:text="Cài đặt hóa đơn"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/android_right_arrow"
-            android:layout_alignParentEnd="true"/>
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/android_right_arrow" />
 
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_marginTop="20dp"
+        android:padding="10dp"
 
         >
+
         <ImageView
             android:id="@+id/donhang"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/android_donhang"/>
+            android:src="@drawable/android_donhang" />
+
         <TextView
             android:id="@+id/textDh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đơn hàng mới"
-            android:layout_below="@+id/donhang"/>
+            android:layout_below="@+id/donhang"
+            android:text="Đơn hàng mới" />
+
         <ImageView
             android:id="@+id/quanly"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/android_quanly"
+            android:layout_marginLeft="60dp"
             android:layout_toRightOf="@id/donhang"
-            android:layout_marginLeft="60dp"/>
+            android:src="@drawable/android_quanly" />
+
         <TextView
             android:id="@+id/textQL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quản Lý"
             android:layout_below="@+id/quanly"
-            android:layout_toRightOf="@id/textDh"
             android:layout_marginLeft="20dp"
-            />
+            android:layout_toRightOf="@id/textDh"
+            android:text="Quản Lý" />
+
         <ImageView
             android:id="@+id/losupply"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/android_losupply"
+            android:layout_marginLeft="50dp"
             android:layout_toRightOf="@id/quanly"
-            android:layout_marginLeft="50dp"/>
+            android:src="@drawable/android_losupply" />
+
         <TextView
             android:id="@+id/textLS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lo-Supply"
             android:layout_below="@+id/losupply"
+            android:layout_marginLeft="50dp"
             android:layout_toRightOf="@id/textQL"
-            android:layout_marginLeft="50dp"/>
+            android:text="Lo-Supply" />
+
         <ImageView
             android:id="@+id/cuahang"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/android_cuhang"
+            android:layout_marginLeft="50dp"
             android:layout_toRightOf="@id/losupply"
-            android:layout_marginLeft="50dp"/>
+            android:src="@drawable/android_cuhang" />
+
         <TextView
             android:id="@+id/texCH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cửa hàng"
             android:layout_below="@+id/losupply"
+            android:layout_marginLeft="40dp"
             android:layout_toRightOf="@id/textLS"
-            android:layout_marginLeft="40dp"/>
+            android:text="Cửa hàng" />
 
 
     </RelativeLayout>
